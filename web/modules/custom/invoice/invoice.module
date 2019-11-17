@@ -1,0 +1,32 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Entity\EntityInterface;
+
+/**
+ *
+ */
+
+ /**
+  * hook_form_alter().
+  */
+function invoice_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  $form['#attached']['library'][] = 'invoice/invoice.invoiceForm';  
+}
+/**
+ * Implements hook_node_presave()
+ */
+function invoice_node_presave(Drupal\node\NodeInterface $node) {
+
+	$paragraph = $node->field_invoice->getValue();
+	// Loop through the result set.
+	$total = 0;
+	foreach ( $paragraph as $element ) {
+	  $p = \Drupal\paragraphs\Entity\Paragraph::load( $element['target_id'] );
+	  
+	  $subtotal= $p->field_sub_total->getValue();
+	  $total += $subtotal[0]['value'];
+
+	}
+	$node->set('field_total',$total);
+}

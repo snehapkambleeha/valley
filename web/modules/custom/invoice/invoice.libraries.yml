@@ -1,0 +1,8 @@
+invoice.invoiceForm:
+  version: 1.x 
+  js:
+    js/invoice.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupalSettings
