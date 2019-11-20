@@ -1,0 +1,19 @@
+uuid: ef056db8-fe61-4af0-886a-a0ca403abd8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tax
+    - paragraphs.paragraphs_type.invoice_
+id: paragraph.invoice_.field_tax
+field_name: field_tax
+entity_type: paragraph
+bundle: invoice_
+label: Tax
+description: '10% of Quantity cost'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

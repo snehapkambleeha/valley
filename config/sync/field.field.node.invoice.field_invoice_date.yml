@@ -1,0 +1,21 @@
+uuid: 7db1724e-1614-49b1-8ebc-bd6948669f06
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_invoice_date
+    - node.type.invoice
+  module:
+    - datetime
+id: node.invoice.field_invoice_date
+field_name: field_invoice_date
+entity_type: node
+bundle: invoice
+label: 'Invoice date'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,20 @@
+uuid: 371d3746-abc3-4e3a-88e2-55ea02a5ddab
+langcode: en
+status: true
+dependencies:
+  theme:
+    - lentodo
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: lentodo_page_title
+theme: lentodo
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

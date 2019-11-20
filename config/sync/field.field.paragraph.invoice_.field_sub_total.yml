@@ -1,0 +1,19 @@
+uuid: aab8c9d9-ee6e-46a2-b41a-748bd34b7566
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sub_total
+    - paragraphs.paragraphs_type.invoice_
+id: paragraph.invoice_.field_sub_total
+field_name: field_sub_total
+entity_type: paragraph
+bundle: invoice_
+label: 'sub total'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

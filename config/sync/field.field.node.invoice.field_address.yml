@@ -1,0 +1,35 @@
+uuid: 1adb5036-c34a-476c-8c41-1c25d0d703d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address
+    - node.type.invoice
+  module:
+    - address
+id: node.invoice.field_address
+field_name: field_address
+entity_type: node
+bundle: invoice
+label: Address
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  langcode_override: ''
+  field_overrides:
+    givenName:
+      override: hidden
+    additionalName:
+      override: hidden
+    familyName:
+      override: hidden
+    sortingCode:
+      override: hidden
+    dependentLocality:
+      override: hidden
+  fields: {  }
+field_type: address

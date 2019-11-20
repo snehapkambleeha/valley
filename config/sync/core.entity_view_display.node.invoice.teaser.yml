@@ -1,0 +1,30 @@
+uuid: 02af8a35-bf3d-40cc-8058-cc79a7c431a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.invoice.body
+    - node.type.invoice
+  module:
+    - text
+    - user
+id: node.invoice.teaser
+targetEntityType: node
+bundle: invoice
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

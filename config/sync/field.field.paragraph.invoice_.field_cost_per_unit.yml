@@ -1,0 +1,19 @@
+uuid: 8d486cee-e61e-4202-9eab-fc596c0c0e16
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cost_per_unit
+    - paragraphs.paragraphs_type.invoice_
+id: paragraph.invoice_.field_cost_per_unit
+field_name: field_cost_per_unit
+entity_type: paragraph
+bundle: invoice_
+label: 'Cost per unit'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

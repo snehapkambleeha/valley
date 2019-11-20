@@ -1,0 +1,21 @@
+uuid: c3c2fc3b-6ffe-4fe9-a505-1ca0a30246d2
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - unique_entity_title
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  unique_entity_title:
+    enabled: false
+name: Invoice
+type: invoice
+description: 'Invoice entity'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

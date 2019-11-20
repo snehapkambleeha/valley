@@ -1,0 +1,58 @@
+uuid: f9f0724f-2de9-418d-b5b3-49bbfd769616
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.invoice_.field_cost_per_unit
+    - field.field.paragraph.invoice_.field_description
+    - field.field.paragraph.invoice_.field_quantity
+    - field.field.paragraph.invoice_.field_sub_total
+    - field.field.paragraph.invoice_.field_tax
+    - paragraphs.paragraphs_type.invoice_
+  module:
+    - text
+id: paragraph.invoice_.default
+targetEntityType: paragraph
+bundle: invoice_
+mode: default
+content:
+  field_cost_per_unit:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_description:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_quantity:
+    weight: 5
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_sub_total:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_tax:
+    weight: 6
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

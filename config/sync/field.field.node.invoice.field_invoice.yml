@@ -1,0 +1,23 @@
+uuid: f01792d1-5e88-4d7f-955e-7fbd25ef2084
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_invoice
+    - node.type.invoice
+  module:
+    - entity_reference_revisions
+id: node.invoice.field_invoice
+field_name: field_invoice
+entity_type: node
+bundle: invoice
+label: 'Invoice details'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings: {  }
+field_type: entity_reference_revisions

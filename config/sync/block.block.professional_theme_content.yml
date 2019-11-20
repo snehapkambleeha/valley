@@ -1,0 +1,22 @@
+uuid: 742a19f0-ab63-48b2-9f15-167a2559f640
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - professional_theme
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: professional_theme_content
+theme: professional_theme
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

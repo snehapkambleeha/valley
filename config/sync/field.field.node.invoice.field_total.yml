@@ -1,0 +1,19 @@
+uuid: 3fa2c4d0-1b41-4e84-9d5f-7bb3d6b05523
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_total
+    - node.type.invoice
+id: node.invoice.field_total
+field_name: field_total
+entity_type: node
+bundle: invoice
+label: Total
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

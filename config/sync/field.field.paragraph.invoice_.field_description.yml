@@ -1,0 +1,21 @@
+uuid: 6d31ba55-a987-4b80-a854-a8fa261ede5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type.invoice_
+  module:
+    - text
+id: paragraph.invoice_.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: invoice_
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

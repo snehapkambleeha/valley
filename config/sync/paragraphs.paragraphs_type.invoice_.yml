@@ -1,0 +1,9 @@
+uuid: c7536fc3-2f48-469b-8233-115de23fd6d2
+langcode: en
+status: true
+dependencies: {  }
+id: invoice_
+label: 'invoice row'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

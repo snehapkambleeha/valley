@@ -1,0 +1,25 @@
+uuid: 331c80cf-33a4-4d14-8eb8-0a8c1dbd6dc8
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - professional_theme
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: professional_theme_branding
+theme: professional_theme
+region: top
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

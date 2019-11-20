@@ -1,0 +1,22 @@
+uuid: e202267f-0921-42dc-8b43-95a1824d36ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.invoice
+  module:
+    - text
+id: node.invoice.body
+field_name: body
+entity_type: node
+bundle: invoice
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary
