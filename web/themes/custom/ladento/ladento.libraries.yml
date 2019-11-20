@@ -1,6 +1,0 @@
-global-styling:
-  version: VERSION
-  css:
-    base:
-      styles/compile.css: {}
-      styles/vendor/flexboxgrid.min.css: {}
