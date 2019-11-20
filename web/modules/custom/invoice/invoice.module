@@ -11,7 +11,7 @@ use Drupal\Core\Entity\EntityInterface;
   * hook_form_alter().
   */
 function invoice_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
-  $form['#attached']['library'][] = 'invoice/invoice.invoiceForm';  
+  $form['#attached']['library'][] = 'invoice/invoice.invoiceForm';
   $form['#theme'] = ['node_edit_form'];
 }
 /**
@@ -23,9 +23,8 @@ function invoice_node_presave(Drupal\node\NodeInterface $node) {
 	// Loop through the result set.
 	$total = 0;
 	foreach ( $paragraph as $element ) {
-	  $p = \Drupal\paragraphs\Entity\Paragraph::load( $element['target_id'] );
-	  
-	  $subtotal= $p->field_sub_total->getValue();
+	  $para_element = \Drupal\paragraphs\Entity\Paragraph::load( $element['target_id'] );
+	  $subtotal= $para_element->field_sub_total->getValue();
 	  $total += $subtotal[0]['value'];
 
 	}

@@ -80,30 +80,14 @@ function lentodo_preprocess_maintenance_page(&$variables) {
 function lentodo_preprocess_node(&$variables) {
   // Remove the "Add new comment" link on teasers or when the comment form is
   // displayed on the page.
-//\Drupal::logger('debugging')->warning(print_r($variables, TRUE));
   if ($variables['teaser'] || !empty($variables['content']['comments']['comment_form'])) {
     unset($variables['content']['links']['comment']['#links']['comment-add']);
   }
-  // $node = \Drupal::routeMatch()->getParameter('node');
-  // $nid = $node->id();
-  // $arguments = [$nid];
-  // // Get the view machine id.
-  // $view = \Drupal\views\Views::getView('invoice_row_information');
-  // // Set the display machine id.
-  // $view->setDisplay('block');
-  //  $view->setArguments($arguments);
-  // // Get the title.
-  // $title = $view->getTitle();
-  // // Render.
-  // $render = $view->render();
 
   $the_title_render_array = [
     '#markup' => t('@title', ['@title'=> $title]),
     '#allowed_tags' => ['h2'],
   ];
- // $variables['content']['view_output'] = $render;
-  
- // print_r($variables['theme_hook_suggestion']);
 }
 
 /**
@@ -142,22 +126,5 @@ function lentodo_form_alter(&$form, FormStateInterface $form_state, $form_id) {
       $form[$key]['submit']['#attributes'] = new Attribute();
     }
     $form[$key]['submit']['#attributes']->addClass('search-form__submit');
-  }
-}
-
-/**
- * Implements HOOK_preprocess_entity_print__entity().
- */
-function lentodo_preprocess_entity_print__node(array &$variables) {
-  $route = \Drupal::routeMatch();
-  $entity_type = $route->getParameter('entity_type');
-  $entity_id = $route->getParameter('entity_id');
-  // double check that you are printing a node, not a view or something else.
-  if ($entity_type == 'node') {
-    $node = \Drupal::routeMatch()->getParameter('node');
-    //$node = \Drupal::entityTypeManager->getStorage('node')->load($entity_id);
-   
-      $variables['address'] = $node->field_address->value;
-  //}
   }
 }

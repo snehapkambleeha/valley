@@ -1,5 +1,5 @@
 name: Invoice page
-description: Custom module to alter the Invoice module.
+description: Invoice module for customisation of invoices created.
 type: module
 package: Lenodo
 core: 8.x

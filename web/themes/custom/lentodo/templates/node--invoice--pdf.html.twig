@@ -84,24 +84,24 @@
   <header>{{ header }}
   </header>
   <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
-  <div class="header-info">
-    <div class="header-first">
-      <span>Date of Invoice {{ content.field_invoice_date|field_value }}</span>
-      <br />
-      <span>Invoice # {{ label }}</span>
-    </div>
-    <div class="header-second">
-      <span>
-        {{ content.field_address|field_value }}
-      </span>
+    <div class="header-info">
+      <div class="header-first">
+        <span>Date of Invoice {{ content.field_invoice_date|field_value }}</span>
+        <br />
+        <span>Invoice # {{ label }}</span>
+      </div>
+      <div class="header-second">
+        <span>
+          {{ content.field_address|field_value }}
+        </span>
       </div>
     </div>
     <div class="invoice-detail">
-    {{ drupal_view('invoice_row_information','block_1', node.id) }}
+      {{ drupal_view('invoice_row_information','block_1', node.id) }}
     </div>
     <br>
     <div class="total">
-       <strong>Total :</strong> {{ content.field_total|field_value }}
+      <strong>Total :</strong> {{ content.field_total|field_value }}
     </div>
 
   </div>

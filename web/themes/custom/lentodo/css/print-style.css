@@ -1,5 +1,8 @@
+/**
+ * SOF Invoice detail information
+ */
 table {
-	clear : both;
+  clear : both;
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
@@ -14,10 +17,12 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
-
+/* EOF invoice detail information */
+/* SOF invoice first part */
 .header-first {
-	text-align: right;
+  text-align: right;
 }
 .total {
-	text-align: right;
+  text-align: right;
 }
+/* EOF invoice first part */
