@@ -1,7 +1,7 @@
 #Steps to install Valley project 
 1. Take pull from the github branch
 2. Open bash and run "composer install"
-3. Take db from /db folder ledonto.sql and install into your Database
+3. Take db from / folder valley.sql and install into your Database
 4. Hit the url
 
 #System requirement :
