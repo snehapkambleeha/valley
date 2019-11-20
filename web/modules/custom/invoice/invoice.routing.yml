@@ -1,0 +1,6 @@
+invoice.addInvoice:
+    path: '/invoice-form'
+    defaults:
+        _controller: 'Drupal\invoice\Controller\invoiceForm::buildForm'
+    requirements:
+        _permission: 'access content'

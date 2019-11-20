@@ -1,5 +1,7 @@
 invoice.invoiceForm:
   version: 1.x 
+  css:
+    css/invoice.css: {}
   js:
     js/invoice.js: {}
   dependencies:

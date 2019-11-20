@@ -12,6 +12,7 @@ use Drupal\Core\Entity\EntityInterface;
   */
 function invoice_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
   $form['#attached']['library'][] = 'invoice/invoice.invoiceForm';  
+  $form['#theme'] = ['node_edit_form'];
 }
 /**
  * Implements hook_node_presave()
