@@ -44,7 +44,7 @@ favicon:
 
 logo:
   use_default: 1
-  path: 'logo.png'
+#  path: 'logo.svg'
 
 # Information added by Drupal.org packaging script on 2016-07-28
 version: '8.x-1.3'

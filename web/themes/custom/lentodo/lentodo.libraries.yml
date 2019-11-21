@@ -1,9 +1,11 @@
 global-styling:
   version: VERSION
   css:
-    base:
-      styles/compile.css: {}
-      styles/vendor/flexboxgrid.min.css: {}
+    layout:
+      css/layout.css: {}
+    theme:
+      css/colors.css: {}
+      css/print.css: { media: print }
 
 print-styling:
   css:
